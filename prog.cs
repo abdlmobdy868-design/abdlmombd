@@ -119,6 +119,4 @@ Add-Migration InitialCreate
 Add-Migration ProductDescriptionAdded
 Add-Migration SaleDateDefault
 Update-Database
-------------------------studentsystem-----
-Add-Migration InitialCreate
-Update-Database
+
