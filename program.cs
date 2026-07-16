@@ -163,3 +163,6 @@ namespace P01_StudentSystem.Data
     }
 }
 ---------------------
+------------------------studentsystem-----
+Add-Migration InitialCreate
+Update-Database
