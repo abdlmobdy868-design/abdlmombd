@@ -8,7 +8,7 @@ P02_SalesDatabase
 │ ├── Store.cs
 │ └── Sale.cs
 └── Program.cs
-----------------------
+----------------------product modl---------------------
 using System.ComponentModel.DataAnnotations;
 
 namespace P02_SalesDatabase.Models
@@ -30,7 +30,7 @@ namespace P02_SalesDatabase.Models
         public virtual ICollection<Sale> Sales { get; set; }
     }
 }
-----------------
+----------------customer-model----------------
     using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -54,7 +54,7 @@ namespace P02_SalesDatabase.Models
         public virtual ICollection<Sale> Sales { get; set; }
     }
 }
--------------
+-------------store model------------
     using System.ComponentModel.DataAnnotations;
 
 namespace P02_SalesDatabase.Models
@@ -70,7 +70,7 @@ namespace P02_SalesDatabase.Models
         public virtual ICollection<Sale> Sales { get; set; }
     }
 }
------------------------------
+-----------------------------sales/model---------------
     namespace P02_SalesDatabase.Models
 {
     public class Sale
@@ -88,7 +88,7 @@ namespace P02_SalesDatabase.Models
         public virtual Store { get; set; }
     }
 }
-----------------------
+----------------------salescontext/model-------------------
 using Microsoft.EntityFrameworkCore;
 using P02_SalesDatabase.Models;
 
@@ -114,11 +114,11 @@ namespace P02_SalesDatabase.Data
         }
     }
 }
-------------------------------------------
+----------------------------------------------mirgation------------------------------------
 Add-Migration InitialCreate
 Add-Migration ProductDescriptionAdded
 Add-Migration SaleDateDefault
 Update-Database
-------------------------
+------------------------studentsystem-----
 Add-Migration InitialCreate
 Update-Database
