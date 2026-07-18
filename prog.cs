@@ -8,7 +8,7 @@ P02_SalesDatabase
 │ ├── Store.cs
 │ └── Sale.cs
 └── Program.cs
-----------------------product modl---------------------
+----------------------sales modle---------------------
 using System.ComponentModel.DataAnnotations;
 
 namespace P02_SalesDatabase.Models
